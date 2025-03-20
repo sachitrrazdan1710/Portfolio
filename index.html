@@ -58,33 +58,34 @@
 
     <!-- applying typing effect for title content -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-<script>
-    var typed = new Typed(".input", {
-        strings: ["Sachitr Razdan","Paasionate about Technology" ,"Software Engineer"],  
-        typeSpeed: 65,  
-        backSpeed: 55,  
-        backDelay: 1000, 
-        startDelay: 500, 
-        loop: true,  
-        showCursor: true, 
-        cursorChar: "|", 
-    });
-
-    /* Responsive Navbar */
-    const menuIcon = document.querySelector(".menu-icon");
-    const sidebar = document.querySelector(".sidebar");
-
-    menuIcon.addEventListener("click", function () {
-        sidebar.classList.toggle("active"); // Toggle Sidebar
-    });
-
-    // Close sidebar when clicking outside
-    document.addEventListener("click", function (event) {
-        if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
-            sidebar.classList.remove("active");
-        }
-    });
-</script>
-
+    <script>
+        // Typing Effect (Looping Issue Fixed)
+        var typed = new Typed(".input", {
+            strings: ["Sachitr Razdan", "Passionate about Technology", "Software Engineer"],
+            typeSpeed: 65,
+            backSpeed: 55,
+            backDelay: 1000,
+            startDelay: 500,
+            loop: true,
+            showCursor: true,
+            cursorChar: "|",
+        });
+    
+        /* Sidebar Toggle for Mobile */
+        const menuIcon = document.querySelector(".menu-icon");
+        const sidebar = document.querySelector(".sidebar");
+    
+        menuIcon.addEventListener("click", function () {
+            sidebar.classList.toggle("active"); // Toggle Sidebar Visibility
+        });
+    
+        // Close sidebar when clicking outside
+        document.addEventListener("click", function (event) {
+            if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
+                sidebar.classList.remove("active");
+            }
+        });
+    </script>
+    
 </body>
 </html>

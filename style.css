@@ -507,7 +507,6 @@
     }
 }
 
-
 /* Sidebar - Default Hidden on Mobile */
 @media (max-width: 900px) {
     .sidebar {
@@ -518,11 +517,12 @@
         top: 0;
         width: 260px;
         height: 100vh;
-        background-color: #111;
-        color: #fff;
+        background-color: rgba(20, 20, 20, 0.95); /* Darker Background with Opacity */
+        color: white;
         z-index: 1000;
-        transform: translateX(-100%); /* Hide initially */
+        transform: translateX(-100%); /* Initially Hidden */
         transition: transform 0.3s ease-in-out;
+        box-shadow: 3px 0px 10px rgba(255, 255, 255, 0.2);
     }
 
     /* When sidebar is active (open) */
@@ -543,3 +543,25 @@
     }
 }
 
+/* Sidebar Link Styles */
+.sidebar ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: goldenrod; /* Highlighted when hovered */
+}
+
+/* Sidebar Social Icons */
+.sidebar .social i {
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.sidebar .social i:hover {
+    color: goldenrod;
+}
