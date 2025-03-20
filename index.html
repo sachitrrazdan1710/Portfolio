@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <h2>Sachitr Razdan</h2>
+        </div>
+        <div class="social-links">
+            
+        </div>
+
+        <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+
+     
+    </div>
+    
+    <div class="header">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="images/sachitr portfolio.png" alt="">
+                    <h2>Sachitr Razdan</h2>
+                </div>
+                <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="social">
+                    <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+                    <a href="https://www.instagram.com/sachitr_razdan1710/"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a href="https://www.linkedin.com/in/sachitr-razdan-554548230/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h4>Welcome To My Portfolio</h4>
+                <h1>I'm <span class="input"></span></h1>
+                <h4>Based in Vaishali,Ghaziabad</h4>
+                <a href="contact.html" class="btn">Hire Me</a>
+
+            </div>
+        </div>
+    </div>
+
+  
+
+    <!-- applying typing effect for title content -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script>
+    var typed = new Typed(".input", {
+        strings: ["Sachitr Razdan","Paasionate about Technology" ,"Software Engineer"],  
+        typeSpeed: 65,  
+        backSpeed: 55,  
+        backDelay: 1000, 
+        startDelay: 500, 
+        loop: true,  
+        showCursor: true, 
+        cursorChar: "|", 
+    });
+
+    /* Responsive Navbar */
+    let menuicon = document.querySelector(".menu-icon");
+    let navbar = document.querySelector(".navbar");
+    let icon = document.querySelector(".menu-icon i");
+
+    menuicon.addEventListener("click", function () {
+        navbar.classList.toggle("open");
+        if (icon.classList.contains("fa-bars")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+        } else {
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+    });
+</script>
+
+</body>
+</html>

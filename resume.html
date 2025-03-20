@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Sachitr Razdan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <h2>Sachitr Razdan</h2>
+        </div>
+        <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="images/sachitr portfolio.png" alt="Sachitr Razdan">
+                    <h2>Sachitr Razdan</h2>
+                </div>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Resume Section -->
+            <div class="resume-content">
+                <h2>My Resume</h2>
+                <p>Click below to **view** or **download** my resume.</p>
+
+                <!-- Resume Viewer -->
+                <div class="resume-viewer">
+                    <iframe src="resume/Sachitr_Razdan.pdf" width="100%" height="600px"></iframe>
+                </div>
+
+                <!-- Download Resume Button -->
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="resume/Sachitr_Razdan.pdf" class="btn" download>Download Resume</a>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings: ["Sachitr Razdan", "Software Engineer", "Cybersecurity Enthusiast"],
+            typeSpeed: 65,
+            backSpeed: 55,
+            loop: true
+        });
+
+        /* Displaying top navbar on small screens */
+        let menuicon = document.querySelector(".menu-icon");
+        let navbar = document.querySelector(".navbar");
+        let icon = document.querySelector(".menu-icon i");
+
+        menuicon.addEventListener("click", function () {
+            navbar.classList.toggle("open");
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+        });
+    </script>
+</body>
+</html>
