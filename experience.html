@@ -102,31 +102,6 @@
             
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
-    <script>
-        var typed = new Typed(".input", {
-            strings: ["Sachitr Razdan", "Software Engineer", "Cybersecurity Enthusiast"],
-            typeSpeed: 65,
-            backSpeed: 55,
-            loop: true
-        });
-
-        /* Displaying top navbar on small screens */
-        let menuicon = document.querySelector(".menu-icon");
-        let navbar = document.querySelector(".navbar");
-        let icon = document.querySelector(".menu-icon i");
-
-        menuicon.addEventListener("click", function () {
-            navbar.classList.toggle("open");
-            if (icon.classList.contains("fa-bars")) {
-                icon.classList.remove("fa-bars");
-                icon.classList.add("fa-xmark");
-            } else {
-                icon.classList.remove("fa-xmark");
-                icon.classList.add("fa-bars");
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
