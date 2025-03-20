@@ -508,4 +508,38 @@
 }
 
 
+/* Sidebar - Default Hidden on Mobile */
+@media (max-width: 900px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 260px;
+        height: 100vh;
+        background-color: #111;
+        color: #fff;
+        z-index: 1000;
+        transform: translateX(-100%); /* Hide initially */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* When sidebar is active (open) */
+    .sidebar.active {
+        transform: translateX(0); /* Slide in */
+    }
+
+    /* Show menu icon */
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        z-index: 1100;
+    }
+}
 
