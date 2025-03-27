@@ -602,3 +602,47 @@ body {
         box-sizing: border-box;
     }
 }
+
+/* Resume Content Adjustments */
+/* Resume Content Adjustments */
+.resume-content {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.resume-viewer iframe {
+    width: 50%;
+    height: 20%; /* Ensures the iframe takes up 80% of the view height */
+    border: none;
+    min-height: 500px;
+}
+
+.resume-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.resume-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Bring Download Resume Button up closer */
+.resume-content .btn {
+    padding: 12px 35px;
+    background-color: goldenrod;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    top: -20px; /* Move button up */
+}
+
+.resume-content .btn:hover {
+    background-color: #ffaa00;
+}
