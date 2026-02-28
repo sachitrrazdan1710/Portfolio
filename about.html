@@ -1,101 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me - Sachitr Razdan</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-</head>
-<body>
-  <!-- Top Navigation -->
-  <div class="topnav">
-    <div class="logo">
-      <h2>Sachitr Razdan</h2>
-    </div>
-    <div class="menu-icon">
-      <i class="fa fa-bars"></i>
-    </div>
-  </div>
-
-  <!-- Header Section -->
-  <div class="header">
-    <div class="wrapper">
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <div class="profile">
-          <img src="images/sachitr_pic-removebg-preview.png" alt=""/>
-          <h2>Sachitr Razdan</h2>
-        </div>
-        <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="social">
-          <a href="https://www.instagram.com/sachitr_razdan1710/"><i class="fab fa-instagram"></i></a>
-          <a href="https://github.com/sachitrrazdan1710"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/sachitr-razdan-554548230/"><i class="fab fa-linkedin"></i></a>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Sachitr Razdan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top Navigation -->
+    <div class="topnav">
+      <div class="logo">
+        <h2>Sachitr Razdan</h2>
       </div>
-
-      <!-- About Me Content -->
-      <div class="about-content">
-        <h2>About Me</h2>
-        <p>
-          Hello! I'm <strong>Sachitr Razdan</strong>, a passionate and Technology driven Enthusiast pursuing a postgraduate degree in Computer Science from Amity University, Noida. Seeking an opportunity to apply my theoretical knowledge in various IT domains, including programming, networking, cybersecurity, and project management, to real-world challenges in a dynamic and growth-oriented environment.
-        </p>
-        <p>
-          I am eager to contribute to innovative projects, learn from experienced professionals, and develop skills integral to a successful career in IT.
-        </p>
-        <p>I have worked with various technologies, including:</p>
-        <ul>
-          <li>Ethical Hacking & Cybersecurity</li>
-          <li>DevOps & CI/CD Automation</li>
-          <li>Software Development</li>
-          <li>Penetration Testing & Vulnerability Assessment</li>
-          <li>Web and Application Security</li>
-        </ul>
-        <p>
-          I am a passionate and motivated fresher aiming to innovate and enhance the security of digital assets by applying modern security methodologies and automation techniques. I am eager to apply my knowledge in cybersecurity and DevOps to real-world projects and continuously learn and grow in this field. If you're looking for a dedicated and enthusiastic beginner ready to contribute and evolve, feel free to connect with me.
-        </p>
-        <a href="resume\SachitrResume.pdf" class="btn" download>Download Resume</a>
+      <div class="menu-icon">
+        <i class="fa fa-bars"></i>
       </div>
     </div>
-  </div>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
-  <script>
-    const menuIcon = document.querySelector(".menu-icon");
-    const sidebar = document.querySelector(".sidebar");
-    const icon = document.querySelector(".menu-icon i");
+    <!-- Header Section -->
+    <div class="header">
+      <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <div class="profile">
+            <img src="images/sachitr_pic-removebg-preview.png" alt="" />
+            <h2>Sachitr Razdan</h2>
+          </div>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="social">
+            <a href="https://www.instagram.com/sachitr_razdan1710/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://github.com/sachitrrazdan1710"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/sachitr-razdan-554548230/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
 
-    if (menuIcon && sidebar && icon) {
-      menuIcon.addEventListener("click", function () {
-        sidebar.classList.toggle("active");
+        <!-- About Me Content -->
+        <div class="about-content">
+          <h2>About Me</h2>
+          <ul class="about-list">
+            <li>
+              Software Engineer with hands-on experience in building,
+              automating, and deploying scalable applications using
+              <strong
+                >Docker, Kubernetes, Jenkins, Git, and GitHub Actions</strong
+              >.
+            </li>
 
-        // Toggle icon from bars to x
-        if (icon.classList.contains("fa-bars")) {
-          icon.classList.remove("fa-bars");
-          icon.classList.add("fa-xmark");
-        } else {
-          icon.classList.remove("fa-xmark");
-          icon.classList.add("fa-bars");
-        }
-      });
+            <li>
+              Experienced in creating and managing
+              <strong>CI/CD pipelines</strong> to automate build, test, and
+              deployment workflows for reliable and faster releases.
+            </li>
 
-      // Close sidebar when clicking outside (optional)
-      document.addEventListener("click", function (event) {
-        if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
-          sidebar.classList.remove("active");
-          icon.classList.add("fa-bars");
-          icon.classList.remove("fa-xmark");
-        }
-      });
-    }
-  </script>
-</body>
+            <li>
+              Skilled in <strong>AWS Cloud, Terraform, and Ansible</strong> for
+              infrastructure provisioning, configuration management, and cloud
+              automation.
+            </li>
+
+            <li>
+              Strong proficiency in
+              <strong
+                >Linux system administration, containerization, and
+                infrastructure automation</strong
+              >
+              to ensure high availability and performance.
+            </li>
+
+            <li>
+              Hands-on experience with <strong>ServiceNow ITSM</strong>,
+              including Incident, Change Management, and Service Catalog in
+              Personal Developer Instance (PDI).
+            </li>
+
+            <li>
+              Developed automation and platform logic using
+              <strong
+                >ServiceNow Flow Designer, Script Includes, Client Scripts, and
+                Business Rules</strong
+              >.
+            </li>
+
+            <li>
+              Knowledge of cybersecurity practices with experience using
+              <strong>Kali Linux, Burp Suite, and SQLMap</strong> to understand
+              vulnerabilities and strengthen system security.
+            </li>
+          </ul>
+          <a href="resume\SachitrResume.pdf" class="btn" download
+            >Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const sidebar = document.querySelector(".sidebar");
+      const icon = document.querySelector(".menu-icon i");
+
+      if (menuIcon && sidebar && icon) {
+        menuIcon.addEventListener("click", function () {
+          sidebar.classList.toggle("active");
+
+          // Toggle icon from bars to x
+          if (icon.classList.contains("fa-bars")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+          } else {
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+          }
+        });
+
+        // Close sidebar when clicking outside (optional)
+        document.addEventListener("click", function (event) {
+          if (
+            !sidebar.contains(event.target) &&
+            !menuIcon.contains(event.target)
+          ) {
+            sidebar.classList.remove("active");
+            icon.classList.add("fa-bars");
+            icon.classList.remove("fa-xmark");
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
